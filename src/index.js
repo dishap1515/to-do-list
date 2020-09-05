@@ -5,21 +5,7 @@ import TodoList from "./TodoList"
 import * as serviceWorker from './serviceWorker';
 
 var destination = document.querySelector("#container");
-class todolist extends Component {
-  render() {
-    return (
-      <div classname="todolistMain">
-        <div classname="header">
-          <form>
-            <input placeholder="enter task">
-            </input>
-            <button type="submit">add</button>
-          </form>
-        </div>
-      </div>
-    );
-  }
-}
+
 
 ReactDOM.render(
     <TodoList/>,
