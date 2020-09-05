@@ -1,14 +1,30 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import TodoList from "./TodoList"
 import * as serviceWorker from './serviceWorker';
 
+var destination = document.querySelector("#container");
+class todolist extends Component {
+  render() {
+    return (
+      <div classname="todolistMain">
+        <div classname="header">
+          <form>
+            <input placeholder="enter task">
+            </input>
+            <button type="submit">add</button>
+          </form>
+        </div>
+      </div>
+    );
+  }
+}
+
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+    <TodoList/>,
+  destination,
+ 
 );
 
 // If you want your app to work offline and load faster, you can change
